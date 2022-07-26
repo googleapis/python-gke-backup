@@ -130,7 +130,7 @@ class CreateBackupPlanRequest(proto.Message):
     Attributes:
         parent (str):
             Required. The location within which to create the
-            BackupPlan. Format: projects/\ */locations/*
+            BackupPlan. Format: ``projects/*/locations/*``
         backup_plan (google.cloud.gke_backup_v1.types.BackupPlan):
             Required. The BackupPlan resource object to
             create.
@@ -166,7 +166,7 @@ class ListBackupPlansRequest(proto.Message):
     Attributes:
         parent (str):
             Required. The location that contains the BackupPlans to
-            list. Format: projects/\ */locations/*
+            list. Format: ``projects/*/locations/*``
         page_size (int):
             The target number of results to return in a single response.
             If not specified, a default value will be chosen by the
@@ -253,7 +253,7 @@ class GetBackupPlanRequest(proto.Message):
     Attributes:
         name (str):
             Required. Fully qualified BackupPlan name. Format:
-            projects/\ */locations/*/backupPlans/\*
+            ``projects/*/locations/*/backupPlans/*``
     """
 
     name = proto.Field(
@@ -301,7 +301,7 @@ class DeleteBackupPlanRequest(proto.Message):
     Attributes:
         name (str):
             Required. Fully qualified BackupPlan name. Format:
-            projects/\ */locations/*/backupPlans/\*
+            ``projects/*/locations/*/backupPlans/*``
         etag (str):
             If provided, this value must match the current value of the
             target BackupPlan's
@@ -325,7 +325,7 @@ class CreateBackupRequest(proto.Message):
     Attributes:
         parent (str):
             Required. The BackupPlan within which to create the Backup.
-            Format: projects/\ */locations/*/backupPlans/\*
+            Format: ``projects/*/locations/*/backupPlans/*``
         backup (google.cloud.gke_backup_v1.types.Backup):
             The Backup resource to create.
         backup_id (str):
@@ -360,7 +360,7 @@ class ListBackupsRequest(proto.Message):
     Attributes:
         parent (str):
             Required. The BackupPlan that contains the Backups to list.
-            Format: projects/\ */locations/*/backupPlans/\*
+            Format: ``projects/*/locations/*/backupPlans/*``
         page_size (int):
             The target number of results to return in a single response.
             If not specified, a default value will be chosen by the
@@ -441,7 +441,7 @@ class GetBackupRequest(proto.Message):
     Attributes:
         name (str):
             Required. Full name of the Backup resource. Format:
-            projects/\ */locations/*/backupPlans/*/backups/*
+            ``projects/*/locations/*/backupPlans/*/backups/*``
     """
 
     name = proto.Field(
@@ -488,7 +488,7 @@ class DeleteBackupRequest(proto.Message):
     Attributes:
         name (str):
             Required. Name of the Backup resource. Format:
-            projects/\ */locations/*/backupPlans/*/backups/*
+            ``projects/*/locations/*/backupPlans/*/backups/*``
         etag (str):
             If provided, this value must match the current value of the
             target Backup's
@@ -522,7 +522,7 @@ class ListVolumeBackupsRequest(proto.Message):
         parent (str):
             Required. The Backup that contains the VolumeBackups to
             list. Format:
-            projects/\ */locations/*/backupPlans/*/backups/*
+            ``projects/*/locations/*/backupPlans/*/backups/*``
         page_size (int):
             The target number of results to return in a single response.
             If not specified, a default value will be chosen by the
@@ -603,7 +603,7 @@ class GetVolumeBackupRequest(proto.Message):
     Attributes:
         name (str):
             Required. Full name of the VolumeBackup resource. Format:
-            projects/\ */locations/*/backupPlans/*/backups/*/volumeBackups/\*
+            ``projects/*/locations/*/backupPlans/*/backups/*/volumeBackups/*``
     """
 
     name = proto.Field(
@@ -618,7 +618,7 @@ class CreateRestorePlanRequest(proto.Message):
     Attributes:
         parent (str):
             Required. The location within which to create the
-            RestorePlan. Format: projects/\ */locations/*
+            RestorePlan. Format: ``projects/*/locations/*``
         restore_plan (google.cloud.gke_backup_v1.types.RestorePlan):
             Required. The RestorePlan resource object to
             create.
@@ -654,7 +654,7 @@ class ListRestorePlansRequest(proto.Message):
     Attributes:
         parent (str):
             Required. The location that contains the RestorePlans to
-            list. Format: projects/\ */locations/*
+            list. Format: ``projects/*/locations/*``
         page_size (int):
             The target number of results to return in a single response.
             If not specified, a default value will be chosen by the
@@ -741,7 +741,7 @@ class GetRestorePlanRequest(proto.Message):
     Attributes:
         name (str):
             Required. Fully qualified RestorePlan name. Format:
-            projects/\ */locations/*/restorePlans/\*
+            ``projects/*/locations/*/restorePlans/*``
     """
 
     name = proto.Field(
@@ -788,7 +788,7 @@ class DeleteRestorePlanRequest(proto.Message):
     Attributes:
         name (str):
             Required. Fully qualified RestorePlan name. Format:
-            projects/\ */locations/*/restorePlans/\*
+            ``projects/*/locations/*/restorePlans/*``
         etag (str):
             If provided, this value must match the current value of the
             target RestorePlan's
@@ -821,7 +821,7 @@ class CreateRestoreRequest(proto.Message):
     Attributes:
         parent (str):
             Required. The RestorePlan within which to create the
-            Restore. Format: projects/\ */locations/*/restorePlans/\*
+            Restore. Format: ``projects/*/locations/*/restorePlans/*``
         restore (google.cloud.gke_backup_v1.types.Restore):
             Required. The restore resource to create.
         restore_id (str):
@@ -856,7 +856,7 @@ class ListRestoresRequest(proto.Message):
     Attributes:
         parent (str):
             Required. The RestorePlan that contains the Restores to
-            list. Format: projects/\ */locations/*/restorePlans/\*
+            list. Format: ``projects/*/locations/*/restorePlans/*``
         page_size (int):
             The target number of results to return in a single response.
             If not specified, a default value will be chosen by the
@@ -943,7 +943,7 @@ class GetRestoreRequest(proto.Message):
     Attributes:
         name (str):
             Required. Name of the restore resource. Format:
-            projects/\ */locations/*/restorePlans/*/restores/*
+            ``projects/*/locations/*/restorePlans/*/restores/*``
     """
 
     name = proto.Field(
@@ -990,7 +990,7 @@ class DeleteRestoreRequest(proto.Message):
     Attributes:
         name (str):
             Required. Full name of the Restore Format:
-            projects/\ */locations/*/restorePlans/*/restores/*
+            ``projects/*/locations/*/restorePlans/*/restores/*``
         etag (str):
             If provided, this value must match the current value of the
             target Restore's
@@ -1024,7 +1024,7 @@ class ListVolumeRestoresRequest(proto.Message):
         parent (str):
             Required. The Restore that contains the VolumeRestores to
             list. Format:
-            projects/\ */locations/*/restorePlans/*/restores/*
+            ``projects/*/locations/*/restorePlans/*/restores/*``
         page_size (int):
             The target number of results to return in a single response.
             If not specified, a default value will be chosen by the
@@ -1105,7 +1105,7 @@ class GetVolumeRestoreRequest(proto.Message):
     Attributes:
         name (str):
             Required. Full name of the VolumeRestore resource. Format:
-            projects/\ */locations/*/restorePlans/*/restores/*/volumeRestores/\*
+            ``projects/*/locations/*/restorePlans/*/restores/*/volumeRestores/*``
     """
 
     name = proto.Field(
