@@ -128,8 +128,8 @@ for library in s.get_staging_dirs(default_version):
     # workaround issue with docstrings
     s.replace(
         library / f"google/cloud/**/*.py",
-        """projects/\\\ \*/locations/\*""",
-        "``projects/*/locations/*``"
+        """projects/\\\ \*/locations/\*\n""",
+        "``projects/*/locations/*``\n"
     )
 
     s.move(library, excludes=["google/cloud/gke_backup/", "setup.py"])
