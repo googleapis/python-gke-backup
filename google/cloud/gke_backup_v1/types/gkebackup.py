@@ -441,7 +441,7 @@ class GetBackupRequest(proto.Message):
     Attributes:
         name (str):
             Required. Full name of the Backup resource. Format:
-            projects/\ */locations/*/backupPlans/*/backups/*
+            ``projects/*/locations/*/backupPlans/*/backups/*``
     """
 
     name = proto.Field(
@@ -488,7 +488,7 @@ class DeleteBackupRequest(proto.Message):
     Attributes:
         name (str):
             Required. Name of the Backup resource. Format:
-            projects/\ */locations/*/backupPlans/*/backups/*
+            ``projects/*/locations/*/backupPlans/*/backups/*``
         etag (str):
             If provided, this value must match the current value of the
             target Backup's
@@ -522,7 +522,7 @@ class ListVolumeBackupsRequest(proto.Message):
         parent (str):
             Required. The Backup that contains the VolumeBackups to
             list. Format:
-            projects/\ */locations/*/backupPlans/*/backups/*
+            ``projects/*/locations/*/backupPlans/*/backups/*``
         page_size (int):
             The target number of results to return in a single response.
             If not specified, a default value will be chosen by the

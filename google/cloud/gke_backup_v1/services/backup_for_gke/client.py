@@ -1486,7 +1486,7 @@ class BackupForGKEClient(metaclass=BackupForGKEClientMeta):
                 The request object. Request message for GetBackup.
             name (str):
                 Required. Full name of the Backup resource. Format:
-                projects/\ */locations/*/backupPlans/*/backups/*
+                ``projects/*/locations/*/backupPlans/*/backups/*``
 
                 This corresponds to the ``name`` field
                 on the ``request`` instance; if ``request`` is provided, this
@@ -1724,7 +1724,7 @@ class BackupForGKEClient(metaclass=BackupForGKEClientMeta):
                 The request object. Request message for DeleteBackup.
             name (str):
                 Required. Name of the Backup resource. Format:
-                projects/\ */locations/*/backupPlans/*/backups/*
+                ``projects/*/locations/*/backupPlans/*/backups/*``
 
                 This corresponds to the ``name`` field
                 on the ``request`` instance; if ``request`` is provided, this
@@ -1839,7 +1839,7 @@ class BackupForGKEClient(metaclass=BackupForGKEClientMeta):
             parent (str):
                 Required. The Backup that contains the VolumeBackups to
                 list. Format:
-                projects/\ */locations/*/backupPlans/*/backups/*
+                ``projects/*/locations/*/backupPlans/*/backups/*``
 
                 This corresponds to the ``parent`` field
                 on the ``request`` instance; if ``request`` is provided, this

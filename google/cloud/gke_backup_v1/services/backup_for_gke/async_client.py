@@ -1132,7 +1132,7 @@ class BackupForGKEAsyncClient:
                 The request object. Request message for GetBackup.
             name (:class:`str`):
                 Required. Full name of the Backup resource. Format:
-                projects/\ */locations/*/backupPlans/*/backups/*
+                ``projects/*/locations/*/backupPlans/*/backups/*``
 
                 This corresponds to the ``name`` field
                 on the ``request`` instance; if ``request`` is provided, this
@@ -1379,7 +1379,7 @@ class BackupForGKEAsyncClient:
                 The request object. Request message for DeleteBackup.
             name (:class:`str`):
                 Required. Name of the Backup resource. Format:
-                projects/\ */locations/*/backupPlans/*/backups/*
+                ``projects/*/locations/*/backupPlans/*/backups/*``
 
                 This corresponds to the ``name`` field
                 on the ``request`` instance; if ``request`` is provided, this
@@ -1494,7 +1494,7 @@ class BackupForGKEAsyncClient:
             parent (:class:`str`):
                 Required. The Backup that contains the VolumeBackups to
                 list. Format:
-                projects/\ */locations/*/backupPlans/*/backups/*
+                ``projects/*/locations/*/backupPlans/*/backups/*``
 
                 This corresponds to the ``parent`` field
                 on the ``request`` instance; if ``request`` is provided, this
