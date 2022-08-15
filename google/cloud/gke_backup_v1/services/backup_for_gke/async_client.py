@@ -1610,7 +1610,7 @@ class BackupForGKEAsyncClient:
             name (:class:`str`):
                 Required. Full name of the VolumeBackup resource.
                 Format:
-                projects/\ */locations/*/backupPlans/*/backups/*/volumeBackups/\*
+                ``projects/*/locations/*/backupPlans/*/backups/*/volumeBackups/*``
 
                 This corresponds to the ``name`` field
                 on the ``request`` instance; if ``request`` is provided, this
@@ -1978,7 +1978,7 @@ class BackupForGKEAsyncClient:
                 The request object. Request message for GetRestorePlan.
             name (:class:`str`):
                 Required. Fully qualified RestorePlan name. Format:
-                projects/\ */locations/*/restorePlans/\*
+                ``projects/*/locations/*/restorePlans/*``
 
                 This corresponds to the ``name`` field
                 on the ``request`` instance; if ``request`` is provided, this
@@ -2224,7 +2224,7 @@ class BackupForGKEAsyncClient:
                 DeleteRestorePlan.
             name (:class:`str`):
                 Required. Fully qualified RestorePlan name. Format:
-                projects/\ */locations/*/restorePlans/\*
+                ``projects/*/locations/*/restorePlans/*``
 
                 This corresponds to the ``name`` field
                 on the ``request`` instance; if ``request`` is provided, this
@@ -2348,7 +2348,7 @@ class BackupForGKEAsyncClient:
             parent (:class:`str`):
                 Required. The RestorePlan within which to create the
                 Restore. Format:
-                projects/\ */locations/*/restorePlans/\*
+                ``projects/*/locations/*/restorePlans/*``
 
                 This corresponds to the ``parent`` field
                 on the ``request`` instance; if ``request`` is provided, this
@@ -2479,7 +2479,7 @@ class BackupForGKEAsyncClient:
                 The request object. Request message for ListRestores.
             parent (:class:`str`):
                 Required. The RestorePlan that contains the Restores to
-                list. Format: projects/\ */locations/*/restorePlans/\*
+                list. Format: ``projects/*/locations/*/restorePlans/*``
 
                 This corresponds to the ``parent`` field
                 on the ``request`` instance; if ``request`` is provided, this

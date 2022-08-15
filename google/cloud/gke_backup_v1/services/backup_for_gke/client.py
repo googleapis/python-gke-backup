@@ -1946,7 +1946,7 @@ class BackupForGKEClient(metaclass=BackupForGKEClientMeta):
             name (str):
                 Required. Full name of the VolumeBackup resource.
                 Format:
-                projects/\ */locations/*/backupPlans/*/backups/*/volumeBackups/\*
+                ``projects/*/locations/*/backupPlans/*/backups/*/volumeBackups/*``
 
                 This corresponds to the ``name`` field
                 on the ``request`` instance; if ``request`` is provided, this
@@ -2296,7 +2296,7 @@ class BackupForGKEClient(metaclass=BackupForGKEClientMeta):
                 The request object. Request message for GetRestorePlan.
             name (str):
                 Required. Fully qualified RestorePlan name. Format:
-                projects/\ */locations/*/restorePlans/\*
+                ``projects/*/locations/*/restorePlans/*``
 
                 This corresponds to the ``name`` field
                 on the ``request`` instance; if ``request`` is provided, this
@@ -2533,7 +2533,7 @@ class BackupForGKEClient(metaclass=BackupForGKEClientMeta):
                 DeleteRestorePlan.
             name (str):
                 Required. Fully qualified RestorePlan name. Format:
-                projects/\ */locations/*/restorePlans/\*
+                ``projects/*/locations/*/restorePlans/*``
 
                 This corresponds to the ``name`` field
                 on the ``request`` instance; if ``request`` is provided, this
@@ -2657,7 +2657,7 @@ class BackupForGKEClient(metaclass=BackupForGKEClientMeta):
             parent (str):
                 Required. The RestorePlan within which to create the
                 Restore. Format:
-                projects/\ */locations/*/restorePlans/\*
+                ``projects/*/locations/*/restorePlans/*``
 
                 This corresponds to the ``parent`` field
                 on the ``request`` instance; if ``request`` is provided, this
@@ -2788,7 +2788,7 @@ class BackupForGKEClient(metaclass=BackupForGKEClientMeta):
                 The request object. Request message for ListRestores.
             parent (str):
                 Required. The RestorePlan that contains the Restores to
-                list. Format: projects/\ */locations/*/restorePlans/\*
+                list. Format: ``projects/*/locations/*/restorePlans/*``
 
                 This corresponds to the ``parent`` field
                 on the ``request`` instance; if ``request`` is provided, this

@@ -603,7 +603,7 @@ class GetVolumeBackupRequest(proto.Message):
     Attributes:
         name (str):
             Required. Full name of the VolumeBackup resource. Format:
-            projects/\ */locations/*/backupPlans/*/backups/*/volumeBackups/\*
+            ``projects/*/locations/*/backupPlans/*/backups/*/volumeBackups/*``
     """
 
     name = proto.Field(
@@ -741,7 +741,7 @@ class GetRestorePlanRequest(proto.Message):
     Attributes:
         name (str):
             Required. Fully qualified RestorePlan name. Format:
-            projects/\ */locations/*/restorePlans/\*
+            ``projects/*/locations/*/restorePlans/*``
     """
 
     name = proto.Field(
@@ -788,7 +788,7 @@ class DeleteRestorePlanRequest(proto.Message):
     Attributes:
         name (str):
             Required. Fully qualified RestorePlan name. Format:
-            projects/\ */locations/*/restorePlans/\*
+            ``projects/*/locations/*/restorePlans/*``
         etag (str):
             If provided, this value must match the current value of the
             target RestorePlan's
@@ -821,7 +821,7 @@ class CreateRestoreRequest(proto.Message):
     Attributes:
         parent (str):
             Required. The RestorePlan within which to create the
-            Restore. Format: projects/\ */locations/*/restorePlans/\*
+            Restore. Format: ``projects/*/locations/*/restorePlans/*``
         restore (google.cloud.gke_backup_v1.types.Restore):
             Required. The restore resource to create.
         restore_id (str):
@@ -856,7 +856,7 @@ class ListRestoresRequest(proto.Message):
     Attributes:
         parent (str):
             Required. The RestorePlan that contains the Restores to
-            list. Format: projects/\ */locations/*/restorePlans/\*
+            list. Format: ``projects/*/locations/*/restorePlans/*``
         page_size (int):
             The target number of results to return in a single response.
             If not specified, a default value will be chosen by the
