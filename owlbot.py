@@ -133,7 +133,7 @@ for library in s.get_staging_dirs(default_version):
     )
     s.replace(
         library / f"google/cloud/**/*.py",
-        """projects/\\\ \*/locations/\*/backupPlans/\*\n""",
+        """projects/\\\ \*/locations/\*/backupPlans/\\\\\*\n""",
         "``projects/*/locations/*/backupPlans/*``\n"
     )
     s.replace(

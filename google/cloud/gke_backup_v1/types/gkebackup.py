@@ -253,7 +253,7 @@ class GetBackupPlanRequest(proto.Message):
     Attributes:
         name (str):
             Required. Fully qualified BackupPlan name. Format:
-            projects/\ */locations/*/backupPlans/\*
+            ``projects/*/locations/*/backupPlans/*``
     """
 
     name = proto.Field(
@@ -301,7 +301,7 @@ class DeleteBackupPlanRequest(proto.Message):
     Attributes:
         name (str):
             Required. Fully qualified BackupPlan name. Format:
-            projects/\ */locations/*/backupPlans/\*
+            ``projects/*/locations/*/backupPlans/*``
         etag (str):
             If provided, this value must match the current value of the
             target BackupPlan's
@@ -325,7 +325,7 @@ class CreateBackupRequest(proto.Message):
     Attributes:
         parent (str):
             Required. The BackupPlan within which to create the Backup.
-            Format: projects/\ */locations/*/backupPlans/\*
+            Format: ``projects/*/locations/*/backupPlans/*``
         backup (google.cloud.gke_backup_v1.types.Backup):
             The Backup resource to create.
         backup_id (str):
@@ -360,7 +360,7 @@ class ListBackupsRequest(proto.Message):
     Attributes:
         parent (str):
             Required. The BackupPlan that contains the Backups to list.
-            Format: projects/\ */locations/*/backupPlans/\*
+            Format: ``projects/*/locations/*/backupPlans/*``
         page_size (int):
             The target number of results to return in a single response.
             If not specified, a default value will be chosen by the

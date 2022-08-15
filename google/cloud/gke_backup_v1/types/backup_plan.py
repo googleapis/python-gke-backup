@@ -34,7 +34,7 @@ class BackupPlan(proto.Message):
     Attributes:
         name (str):
             Output only. The full name of the BackupPlan resource.
-            Format: projects/\ */locations/*/backupPlans/\*
+            Format: ``projects/*/locations/*/backupPlans/*``
         uid (str):
             Output only. Server generated global unique identifier of
             `UUID <https://en.wikipedia.org/wiki/Universally_unique_identifier>`__

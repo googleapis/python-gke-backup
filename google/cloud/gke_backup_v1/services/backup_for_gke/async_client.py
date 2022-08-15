@@ -526,7 +526,7 @@ class BackupForGKEAsyncClient:
                 The request object. Request message for GetBackupPlan.
             name (:class:`str`):
                 Required. Fully qualified BackupPlan name. Format:
-                projects/\ */locations/*/backupPlans/\*
+                ``projects/*/locations/*/backupPlans/*``
 
                 This corresponds to the ``name`` field
                 on the ``request`` instance; if ``request`` is provided, this
@@ -770,7 +770,7 @@ class BackupForGKEAsyncClient:
                 DeleteBackupPlan.
             name (:class:`str`):
                 Required. Fully qualified BackupPlan name. Format:
-                projects/\ */locations/*/backupPlans/\*
+                ``projects/*/locations/*/backupPlans/*``
 
                 This corresponds to the ``name`` field
                 on the ``request`` instance; if ``request`` is provided, this
@@ -888,7 +888,7 @@ class BackupForGKEAsyncClient:
                 The request object. Request message for CreateBackup.
             parent (:class:`str`):
                 Required. The BackupPlan within which to create the
-                Backup. Format: projects/\ */locations/*/backupPlans/\*
+                Backup. Format: ``projects/*/locations/*/backupPlans/*``
 
                 This corresponds to the ``parent`` field
                 on the ``request`` instance; if ``request`` is provided, this
@@ -1018,7 +1018,7 @@ class BackupForGKEAsyncClient:
                 The request object. Request message for ListBackups.
             parent (:class:`str`):
                 Required. The BackupPlan that contains the Backups to
-                list. Format: projects/\ */locations/*/backupPlans/\*
+                list. Format: ``projects/*/locations/*/backupPlans/*``
 
                 This corresponds to the ``parent`` field
                 on the ``request`` instance; if ``request`` is provided, this
