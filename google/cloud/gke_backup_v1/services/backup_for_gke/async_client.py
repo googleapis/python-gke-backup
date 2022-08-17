@@ -2593,7 +2593,7 @@ class BackupForGKEAsyncClient:
                 The request object. Request message for GetRestore.
             name (:class:`str`):
                 Required. Name of the restore resource. Format:
-                projects/\ */locations/*/restorePlans/*/restores/*
+                ``projects/*/locations/*/restorePlans/*/restores/*``
 
                 This corresponds to the ``name`` field
                 on the ``request`` instance; if ``request`` is provided, this
@@ -2834,7 +2834,7 @@ class BackupForGKEAsyncClient:
                 The request object. Request message for DeleteRestore.
             name (:class:`str`):
                 Required. Full name of the Restore Format:
-                projects/\ */locations/*/restorePlans/*/restores/*
+                ``projects/*/locations/*/restorePlans/*/restores/*``
 
                 This corresponds to the ``name`` field
                 on the ``request`` instance; if ``request`` is provided, this
@@ -2949,7 +2949,7 @@ class BackupForGKEAsyncClient:
             parent (:class:`str`):
                 Required. The Restore that contains the VolumeRestores
                 to list. Format:
-                projects/\ */locations/*/restorePlans/*/restores/*
+                ``projects/*/locations/*/restorePlans/*/restores/*``
 
                 This corresponds to the ``parent`` field
                 on the ``request`` instance; if ``request`` is provided, this
@@ -3066,7 +3066,7 @@ class BackupForGKEAsyncClient:
             name (:class:`str`):
                 Required. Full name of the VolumeRestore resource.
                 Format:
-                projects/\ */locations/*/restorePlans/*/restores/*/volumeRestores/\*
+                ``projects/*/locations/*/restorePlans/*/restores/*/volumeRestores/*``
 
                 This corresponds to the ``name`` field
                 on the ``request`` instance; if ``request`` is provided, this

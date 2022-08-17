@@ -943,7 +943,7 @@ class GetRestoreRequest(proto.Message):
     Attributes:
         name (str):
             Required. Name of the restore resource. Format:
-            projects/\ */locations/*/restorePlans/*/restores/*
+            ``projects/*/locations/*/restorePlans/*/restores/*``
     """
 
     name = proto.Field(
@@ -990,7 +990,7 @@ class DeleteRestoreRequest(proto.Message):
     Attributes:
         name (str):
             Required. Full name of the Restore Format:
-            projects/\ */locations/*/restorePlans/*/restores/*
+            ``projects/*/locations/*/restorePlans/*/restores/*``
         etag (str):
             If provided, this value must match the current value of the
             target Restore's
@@ -1024,7 +1024,7 @@ class ListVolumeRestoresRequest(proto.Message):
         parent (str):
             Required. The Restore that contains the VolumeRestores to
             list. Format:
-            projects/\ */locations/*/restorePlans/*/restores/*
+            ``projects/*/locations/*/restorePlans/*/restores/*``
         page_size (int):
             The target number of results to return in a single response.
             If not specified, a default value will be chosen by the
@@ -1105,7 +1105,7 @@ class GetVolumeRestoreRequest(proto.Message):
     Attributes:
         name (str):
             Required. Full name of the VolumeRestore resource. Format:
-            projects/\ */locations/*/restorePlans/*/restores/*/volumeRestores/\*
+            ``projects/*/locations/*/restorePlans/*/restores/*/volumeRestores/*``
     """
 
     name = proto.Field(

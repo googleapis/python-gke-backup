@@ -149,14 +149,18 @@ for library in s.get_staging_dirs(default_version):
     s.replace(
         library / f"google/cloud/**/*.py",
         "projects/\\\ \*/locations/\*/restorePlans/\\\\\*\n",
-        "``projects/*/locations/*/restorePlans/*``\n"
+        "``projects/*/locations/*/restorePlans/*``\n",
     )
     s.replace(
         library / f"google/cloud/**/*.py",
-        "projects/\\\ \*/locations/\*/restorePlans/\*/restores/\*\n"
-        "``projects/*/locations/*/restorePlans/*/restores/*``\n"
+        "projects/\\\ \*/locations/\*/restorePlans/\*/restores/\*\n",
+        "``projects/*/locations/*/restorePlans/*/restores/*``\n",
     )
-
+    s.replace(
+        library / f"google/cloud/**/*.py",
+        "projects/\\\ \*/locations/\*/restorePlans/\*/restores/\*/volumeRestores/\\\\\*\n",
+        "``projects/*/locations/*/restorePlans/*/restores/*/volumeRestores/*``\n"
+    )
     s.move(library, excludes=["google/cloud/gke_backup/", "setup.py"])
 s.remove_staging_dirs()
 

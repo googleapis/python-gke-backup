@@ -2893,7 +2893,7 @@ class BackupForGKEClient(metaclass=BackupForGKEClientMeta):
                 The request object. Request message for GetRestore.
             name (str):
                 Required. Name of the restore resource. Format:
-                projects/\ */locations/*/restorePlans/*/restores/*
+                ``projects/*/locations/*/restorePlans/*/restores/*``
 
                 This corresponds to the ``name`` field
                 on the ``request`` instance; if ``request`` is provided, this
@@ -3125,7 +3125,7 @@ class BackupForGKEClient(metaclass=BackupForGKEClientMeta):
                 The request object. Request message for DeleteRestore.
             name (str):
                 Required. Full name of the Restore Format:
-                projects/\ */locations/*/restorePlans/*/restores/*
+                ``projects/*/locations/*/restorePlans/*/restores/*``
 
                 This corresponds to the ``name`` field
                 on the ``request`` instance; if ``request`` is provided, this
@@ -3240,7 +3240,7 @@ class BackupForGKEClient(metaclass=BackupForGKEClientMeta):
             parent (str):
                 Required. The Restore that contains the VolumeRestores
                 to list. Format:
-                projects/\ */locations/*/restorePlans/*/restores/*
+                ``projects/*/locations/*/restorePlans/*/restores/*``
 
                 This corresponds to the ``parent`` field
                 on the ``request`` instance; if ``request`` is provided, this
@@ -3348,7 +3348,7 @@ class BackupForGKEClient(metaclass=BackupForGKEClientMeta):
             name (str):
                 Required. Full name of the VolumeRestore resource.
                 Format:
-                projects/\ */locations/*/restorePlans/*/restores/*/volumeRestores/\*
+                ``projects/*/locations/*/restorePlans/*/restores/*/volumeRestores/*``
 
                 This corresponds to the ``name`` field
                 on the ``request`` instance; if ``request`` is provided, this
