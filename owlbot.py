@@ -143,6 +143,12 @@ for library in s.get_staging_dirs(default_version):
     )
     s.replace(
         library / f"google/cloud/**/*.py",
+        """projects/\\\ \*/locations/\*/backupPlans/\*/backups/\*.\n""",
+        "``projects/*/locations/*/backupPlans/*/backups/*``.\n",
+    )
+
+    s.replace(
+        library / f"google/cloud/**/*.py",
         "projects/\\\ \*/locations/\*/backupPlans/\*/backups/\*/volumeBackups/\\\\\*\n",
         "``projects/*/locations/*/backupPlans/*/backups/*/volumeBackups/*``\n",
     )
