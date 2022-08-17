@@ -61,8 +61,8 @@ class Restore(proto.Message):
             Output only. The target cluster into which this Restore will
             restore data. Valid formats:
 
-            -  projects/\ */locations/*/clusters/\*
-            -  projects/\ */zones/*/clusters/\*
+            -  ``projects/*/locations/*/clusters/*``
+            -  ``projects/*/zones/*/clusters/*``
 
             Inherited from parent RestorePlan's
             [cluster][google.cloud.gkebackup.v1.RestorePlan.cluster]

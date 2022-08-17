@@ -52,8 +52,8 @@ class BackupPlan(proto.Message):
             Required. Immutable. The source cluster from which Backups
             will be created via this BackupPlan. Valid formats:
 
-            -  projects/\ */locations/*/clusters/\*
-            -  projects/\ */zones/*/clusters/\*
+            -  ``projects/*/locations/*/clusters/*``
+            -  ``projects/*/zones/*/clusters/*``
         retention_policy (google.cloud.gke_backup_v1.types.BackupPlan.RetentionPolicy):
             RetentionPolicy governs lifecycle of Backups
             created under this plan.
