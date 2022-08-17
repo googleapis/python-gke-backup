@@ -159,6 +159,11 @@ for library in s.get_staging_dirs(default_version):
     )
     s.replace(
         library / f"google/cloud/**/*.py",
+        "projects/\\\ \*/locations/\*/backupPlans/\*/backups/\*/volumeBackups/\*.\n",
+        "``projects/*/locations/*/backupPlans/*/backups/*/volumeBackups/*``.\n",
+    )
+    s.replace(
+        library / f"google/cloud/**/*.py",
         "projects/\\\ \*/locations/\*/restorePlans/\\\\\*\n",
         "``projects/*/locations/*/restorePlans/*``\n",
     )
@@ -176,6 +181,11 @@ for library in s.get_staging_dirs(default_version):
         library / f"google/cloud/**/*.py",
         "projects/\\\ \*/locations/\*/restorePlans/\*/restores/\*/volumeRestores/\\\\\*\n",
         "``projects/*/locations/*/restorePlans/*/restores/*/volumeRestores/*``\n",
+    )
+    s.replace(
+        library / f"google/cloud/**/*.py",
+        "projects/\\\ \*/locations/\*/restorePlans/\*/restores/\*/volumeRestores/\*.\n",
+        "``projects/*/locations/*/restorePlans/*/restores/*/volumeRestores/*``.\n",
     )
     s.replace(
         library / f"google/cloud/**/*.py",
