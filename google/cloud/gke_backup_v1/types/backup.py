@@ -193,8 +193,8 @@ class Backup(proto.Message):
                 The source cluster from which this Backup was created. Valid
                 formats:
 
-                -  projects/\ */locations/*/clusters/\*
-                -  projects/\ */zones/*/clusters/\*
+                -  ``projects/*/locations/*/clusters/*``
+                -  ``projects/*/zones/*/clusters/*``
 
                 This is inherited from the parent BackupPlan's
                 [cluster][google.cloud.gkebackup.v1.BackupPlan.cluster]
