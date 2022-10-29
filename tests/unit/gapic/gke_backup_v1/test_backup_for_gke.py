@@ -65,6 +65,7 @@ from google.cloud.gke_backup_v1.types import restore_plan as gcg_restore_plan
 from google.cloud.gke_backup_v1.types import volume
 from google.longrunning import operations_pb2
 from google.oauth2 import service_account
+from google.protobuf import empty_pb2  # type: ignore
 from google.protobuf import field_mask_pb2  # type: ignore
 from google.protobuf import timestamp_pb2  # type: ignore
 import google.auth
