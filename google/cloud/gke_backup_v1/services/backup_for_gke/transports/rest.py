@@ -819,10 +819,10 @@ class BackupForGKERestTransport(BackupForGKETransport):
         self,
         *,
         host: str = "gkebackup.googleapis.com",
-        credentials: ga_credentials.Credentials = None,
-        credentials_file: str = None,
-        scopes: Sequence[str] = None,
-        client_cert_source_for_mtls: Callable[[], Tuple[bytes, bytes]] = None,
+        credentials: Optional[ga_credentials.Credentials] = None,
+        credentials_file: Optional[str] = None,
+        scopes: Optional[Sequence[str]] = None,
+        client_cert_source_for_mtls: Optional[Callable[[], Tuple[bytes, bytes]]] = None,
         quota_project_id: Optional[str] = None,
         client_info: gapic_v1.client_info.ClientInfo = DEFAULT_CLIENT_INFO,
         always_use_jwt_access: Optional[bool] = False,
@@ -941,7 +941,7 @@ class BackupForGKERestTransport(BackupForGKETransport):
             request: gkebackup.CreateBackupRequest,
             *,
             retry: OptionalRetry = gapic_v1.method.DEFAULT,
-            timeout: float = None,
+            timeout: Optional[float] = None,
             metadata: Sequence[Tuple[str, str]] = (),
         ) -> operations_pb2.Operation:
             r"""Call the create backup method over HTTP.
@@ -1037,7 +1037,7 @@ class BackupForGKERestTransport(BackupForGKETransport):
             request: gkebackup.CreateBackupPlanRequest,
             *,
             retry: OptionalRetry = gapic_v1.method.DEFAULT,
-            timeout: float = None,
+            timeout: Optional[float] = None,
             metadata: Sequence[Tuple[str, str]] = (),
         ) -> operations_pb2.Operation:
             r"""Call the create backup plan method over HTTP.
@@ -1135,7 +1135,7 @@ class BackupForGKERestTransport(BackupForGKETransport):
             request: gkebackup.CreateRestoreRequest,
             *,
             retry: OptionalRetry = gapic_v1.method.DEFAULT,
-            timeout: float = None,
+            timeout: Optional[float] = None,
             metadata: Sequence[Tuple[str, str]] = (),
         ) -> operations_pb2.Operation:
             r"""Call the create restore method over HTTP.
@@ -1231,7 +1231,7 @@ class BackupForGKERestTransport(BackupForGKETransport):
             request: gkebackup.CreateRestorePlanRequest,
             *,
             retry: OptionalRetry = gapic_v1.method.DEFAULT,
-            timeout: float = None,
+            timeout: Optional[float] = None,
             metadata: Sequence[Tuple[str, str]] = (),
         ) -> operations_pb2.Operation:
             r"""Call the create restore plan method over HTTP.
@@ -1329,7 +1329,7 @@ class BackupForGKERestTransport(BackupForGKETransport):
             request: gkebackup.DeleteBackupRequest,
             *,
             retry: OptionalRetry = gapic_v1.method.DEFAULT,
-            timeout: float = None,
+            timeout: Optional[float] = None,
             metadata: Sequence[Tuple[str, str]] = (),
         ) -> operations_pb2.Operation:
             r"""Call the delete backup method over HTTP.
@@ -1414,7 +1414,7 @@ class BackupForGKERestTransport(BackupForGKETransport):
             request: gkebackup.DeleteBackupPlanRequest,
             *,
             retry: OptionalRetry = gapic_v1.method.DEFAULT,
-            timeout: float = None,
+            timeout: Optional[float] = None,
             metadata: Sequence[Tuple[str, str]] = (),
         ) -> operations_pb2.Operation:
             r"""Call the delete backup plan method over HTTP.
@@ -1501,7 +1501,7 @@ class BackupForGKERestTransport(BackupForGKETransport):
             request: gkebackup.DeleteRestoreRequest,
             *,
             retry: OptionalRetry = gapic_v1.method.DEFAULT,
-            timeout: float = None,
+            timeout: Optional[float] = None,
             metadata: Sequence[Tuple[str, str]] = (),
         ) -> operations_pb2.Operation:
             r"""Call the delete restore method over HTTP.
@@ -1586,7 +1586,7 @@ class BackupForGKERestTransport(BackupForGKETransport):
             request: gkebackup.DeleteRestorePlanRequest,
             *,
             retry: OptionalRetry = gapic_v1.method.DEFAULT,
-            timeout: float = None,
+            timeout: Optional[float] = None,
             metadata: Sequence[Tuple[str, str]] = (),
         ) -> operations_pb2.Operation:
             r"""Call the delete restore plan method over HTTP.
@@ -1675,7 +1675,7 @@ class BackupForGKERestTransport(BackupForGKETransport):
             request: gkebackup.GetBackupRequest,
             *,
             retry: OptionalRetry = gapic_v1.method.DEFAULT,
-            timeout: float = None,
+            timeout: Optional[float] = None,
             metadata: Sequence[Tuple[str, str]] = (),
         ) -> backup.Backup:
             r"""Call the get backup method over HTTP.
@@ -1767,7 +1767,7 @@ class BackupForGKERestTransport(BackupForGKETransport):
             request: gkebackup.GetBackupPlanRequest,
             *,
             retry: OptionalRetry = gapic_v1.method.DEFAULT,
-            timeout: float = None,
+            timeout: Optional[float] = None,
             metadata: Sequence[Tuple[str, str]] = (),
         ) -> backup_plan.BackupPlan:
             r"""Call the get backup plan method over HTTP.
@@ -1853,7 +1853,7 @@ class BackupForGKERestTransport(BackupForGKETransport):
             request: gkebackup.GetRestoreRequest,
             *,
             retry: OptionalRetry = gapic_v1.method.DEFAULT,
-            timeout: float = None,
+            timeout: Optional[float] = None,
             metadata: Sequence[Tuple[str, str]] = (),
         ) -> restore.Restore:
             r"""Call the get restore method over HTTP.
@@ -1941,7 +1941,7 @@ class BackupForGKERestTransport(BackupForGKETransport):
             request: gkebackup.GetRestorePlanRequest,
             *,
             retry: OptionalRetry = gapic_v1.method.DEFAULT,
-            timeout: float = None,
+            timeout: Optional[float] = None,
             metadata: Sequence[Tuple[str, str]] = (),
         ) -> restore_plan.RestorePlan:
             r"""Call the get restore plan method over HTTP.
@@ -2031,7 +2031,7 @@ class BackupForGKERestTransport(BackupForGKETransport):
             request: gkebackup.GetVolumeBackupRequest,
             *,
             retry: OptionalRetry = gapic_v1.method.DEFAULT,
-            timeout: float = None,
+            timeout: Optional[float] = None,
             metadata: Sequence[Tuple[str, str]] = (),
         ) -> volume.VolumeBackup:
             r"""Call the get volume backup method over HTTP.
@@ -2123,7 +2123,7 @@ class BackupForGKERestTransport(BackupForGKETransport):
             request: gkebackup.GetVolumeRestoreRequest,
             *,
             retry: OptionalRetry = gapic_v1.method.DEFAULT,
-            timeout: float = None,
+            timeout: Optional[float] = None,
             metadata: Sequence[Tuple[str, str]] = (),
         ) -> volume.VolumeRestore:
             r"""Call the get volume restore method over HTTP.
@@ -2212,7 +2212,7 @@ class BackupForGKERestTransport(BackupForGKETransport):
             request: gkebackup.ListBackupPlansRequest,
             *,
             retry: OptionalRetry = gapic_v1.method.DEFAULT,
-            timeout: float = None,
+            timeout: Optional[float] = None,
             metadata: Sequence[Tuple[str, str]] = (),
         ) -> gkebackup.ListBackupPlansResponse:
             r"""Call the list backup plans method over HTTP.
@@ -2298,7 +2298,7 @@ class BackupForGKERestTransport(BackupForGKETransport):
             request: gkebackup.ListBackupsRequest,
             *,
             retry: OptionalRetry = gapic_v1.method.DEFAULT,
-            timeout: float = None,
+            timeout: Optional[float] = None,
             metadata: Sequence[Tuple[str, str]] = (),
         ) -> gkebackup.ListBackupsResponse:
             r"""Call the list backups method over HTTP.
@@ -2382,7 +2382,7 @@ class BackupForGKERestTransport(BackupForGKETransport):
             request: gkebackup.ListRestorePlansRequest,
             *,
             retry: OptionalRetry = gapic_v1.method.DEFAULT,
-            timeout: float = None,
+            timeout: Optional[float] = None,
             metadata: Sequence[Tuple[str, str]] = (),
         ) -> gkebackup.ListRestorePlansResponse:
             r"""Call the list restore plans method over HTTP.
@@ -2470,7 +2470,7 @@ class BackupForGKERestTransport(BackupForGKETransport):
             request: gkebackup.ListRestoresRequest,
             *,
             retry: OptionalRetry = gapic_v1.method.DEFAULT,
-            timeout: float = None,
+            timeout: Optional[float] = None,
             metadata: Sequence[Tuple[str, str]] = (),
         ) -> gkebackup.ListRestoresResponse:
             r"""Call the list restores method over HTTP.
@@ -2554,7 +2554,7 @@ class BackupForGKERestTransport(BackupForGKETransport):
             request: gkebackup.ListVolumeBackupsRequest,
             *,
             retry: OptionalRetry = gapic_v1.method.DEFAULT,
-            timeout: float = None,
+            timeout: Optional[float] = None,
             metadata: Sequence[Tuple[str, str]] = (),
         ) -> gkebackup.ListVolumeBackupsResponse:
             r"""Call the list volume backups method over HTTP.
@@ -2644,7 +2644,7 @@ class BackupForGKERestTransport(BackupForGKETransport):
             request: gkebackup.ListVolumeRestoresRequest,
             *,
             retry: OptionalRetry = gapic_v1.method.DEFAULT,
-            timeout: float = None,
+            timeout: Optional[float] = None,
             metadata: Sequence[Tuple[str, str]] = (),
         ) -> gkebackup.ListVolumeRestoresResponse:
             r"""Call the list volume restores method over HTTP.
@@ -2734,7 +2734,7 @@ class BackupForGKERestTransport(BackupForGKETransport):
             request: gkebackup.UpdateBackupRequest,
             *,
             retry: OptionalRetry = gapic_v1.method.DEFAULT,
-            timeout: float = None,
+            timeout: Optional[float] = None,
             metadata: Sequence[Tuple[str, str]] = (),
         ) -> operations_pb2.Operation:
             r"""Call the update backup method over HTTP.
@@ -2828,7 +2828,7 @@ class BackupForGKERestTransport(BackupForGKETransport):
             request: gkebackup.UpdateBackupPlanRequest,
             *,
             retry: OptionalRetry = gapic_v1.method.DEFAULT,
-            timeout: float = None,
+            timeout: Optional[float] = None,
             metadata: Sequence[Tuple[str, str]] = (),
         ) -> operations_pb2.Operation:
             r"""Call the update backup plan method over HTTP.
@@ -2924,7 +2924,7 @@ class BackupForGKERestTransport(BackupForGKETransport):
             request: gkebackup.UpdateRestoreRequest,
             *,
             retry: OptionalRetry = gapic_v1.method.DEFAULT,
-            timeout: float = None,
+            timeout: Optional[float] = None,
             metadata: Sequence[Tuple[str, str]] = (),
         ) -> operations_pb2.Operation:
             r"""Call the update restore method over HTTP.
@@ -3018,7 +3018,7 @@ class BackupForGKERestTransport(BackupForGKETransport):
             request: gkebackup.UpdateRestorePlanRequest,
             *,
             retry: OptionalRetry = gapic_v1.method.DEFAULT,
-            timeout: float = None,
+            timeout: Optional[float] = None,
             metadata: Sequence[Tuple[str, str]] = (),
         ) -> operations_pb2.Operation:
             r"""Call the update restore plan method over HTTP.

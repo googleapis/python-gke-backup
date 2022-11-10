@@ -13,6 +13,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+from typing import MutableMapping, MutableSequence
+
 import proto  # type: ignore
 
 
@@ -31,11 +33,11 @@ class Namespaces(proto.Message):
     r"""A list of Kubernetes Namespaces
 
     Attributes:
-        namespaces (Sequence[str]):
+        namespaces (MutableSequence[str]):
             A list of Kubernetes Namespaces
     """
 
-    namespaces = proto.RepeatedField(
+    namespaces: MutableSequence[str] = proto.RepeatedField(
         proto.STRING,
         number=1,
     )
@@ -51,11 +53,11 @@ class NamespacedName(proto.Message):
             The name of the Kubernetes resource.
     """
 
-    namespace = proto.Field(
+    namespace: str = proto.Field(
         proto.STRING,
         number=1,
     )
-    name = proto.Field(
+    name: str = proto.Field(
         proto.STRING,
         number=2,
     )
@@ -65,11 +67,11 @@ class NamespacedNames(proto.Message):
     r"""A list of namespaced Kubernetes resources.
 
     Attributes:
-        namespaced_names (Sequence[google.cloud.gke_backup_v1.types.NamespacedName]):
+        namespaced_names (MutableSequence[google.cloud.gke_backup_v1.types.NamespacedName]):
             A list of namespaced Kubernetes resources.
     """
 
-    namespaced_names = proto.RepeatedField(
+    namespaced_names: MutableSequence["NamespacedName"] = proto.RepeatedField(
         proto.MESSAGE,
         number=1,
         message="NamespacedName",
@@ -86,7 +88,7 @@ class EncryptionKey(proto.Message):
             ``projects/*/locations/*/keyRings/*/cryptoKeys/*``
     """
 
-    gcp_kms_encryption_key = proto.Field(
+    gcp_kms_encryption_key: str = proto.Field(
         proto.STRING,
         number=1,
     )
