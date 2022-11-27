@@ -13,18 +13,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from .backup import (
-    Backup,
-)
-from .backup_plan import (
-    BackupPlan,
-)
-from .common import (
-    EncryptionKey,
-    NamespacedName,
-    NamespacedNames,
-    Namespaces,
-)
+from .backup import Backup
+from .backup_plan import BackupPlan
+from .common import EncryptionKey, NamespacedName, NamespacedNames, Namespaces
 from .gkebackup import (
     CreateBackupPlanRequest,
     CreateBackupRequest,
@@ -58,17 +49,9 @@ from .gkebackup import (
     UpdateRestorePlanRequest,
     UpdateRestoreRequest,
 )
-from .restore import (
-    Restore,
-    RestoreConfig,
-)
-from .restore_plan import (
-    RestorePlan,
-)
-from .volume import (
-    VolumeBackup,
-    VolumeRestore,
-)
+from .restore import Restore, RestoreConfig
+from .restore_plan import RestorePlan
+from .volume import VolumeBackup, VolumeRestore
 
 __all__ = (
     "Backup",

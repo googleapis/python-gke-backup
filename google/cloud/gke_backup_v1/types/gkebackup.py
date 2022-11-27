@@ -15,6 +15,8 @@
 #
 from typing import MutableMapping, MutableSequence
 
+from google.protobuf import field_mask_pb2  # type: ignore
+from google.protobuf import timestamp_pb2  # type: ignore
 import proto  # type: ignore
 
 from google.cloud.gke_backup_v1.types import backup as gcg_backup
@@ -22,9 +24,6 @@ from google.cloud.gke_backup_v1.types import backup_plan as gcg_backup_plan
 from google.cloud.gke_backup_v1.types import restore as gcg_restore
 from google.cloud.gke_backup_v1.types import restore_plan as gcg_restore_plan
 from google.cloud.gke_backup_v1.types import volume
-from google.protobuf import field_mask_pb2  # type: ignore
-from google.protobuf import timestamp_pb2  # type: ignore
-
 
 __protobuf__ = proto.module(
     package="google.cloud.gkebackup.v1",

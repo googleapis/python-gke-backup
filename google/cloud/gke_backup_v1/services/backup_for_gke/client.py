@@ -28,17 +28,17 @@ from typing import (
     Union,
     cast,
 )
-import pkg_resources
 
 from google.api_core import client_options as client_options_lib
 from google.api_core import exceptions as core_exceptions
 from google.api_core import gapic_v1
 from google.api_core import retry as retries
 from google.auth import credentials as ga_credentials  # type: ignore
+from google.auth.exceptions import MutualTLSChannelError  # type: ignore
 from google.auth.transport import mtls  # type: ignore
 from google.auth.transport.grpc import SslCredentials  # type: ignore
-from google.auth.exceptions import MutualTLSChannelError  # type: ignore
 from google.oauth2 import service_account  # type: ignore
+import pkg_resources
 
 try:
     OptionalRetry = Union[retries.Retry, gapic_v1.method._MethodDefault]
@@ -47,22 +47,23 @@ except AttributeError:  # pragma: NO COVER
 
 from google.api_core import operation  # type: ignore
 from google.api_core import operation_async  # type: ignore
+from google.protobuf import empty_pb2  # type: ignore
+from google.protobuf import field_mask_pb2  # type: ignore
+from google.protobuf import timestamp_pb2  # type: ignore
+
 from google.cloud.gke_backup_v1.services.backup_for_gke import pagers
 from google.cloud.gke_backup_v1.types import backup
 from google.cloud.gke_backup_v1.types import backup as gcg_backup
 from google.cloud.gke_backup_v1.types import backup_plan
 from google.cloud.gke_backup_v1.types import backup_plan as gcg_backup_plan
-from google.cloud.gke_backup_v1.types import common
-from google.cloud.gke_backup_v1.types import gkebackup
+from google.cloud.gke_backup_v1.types import common, gkebackup
 from google.cloud.gke_backup_v1.types import restore
 from google.cloud.gke_backup_v1.types import restore as gcg_restore
 from google.cloud.gke_backup_v1.types import restore_plan
 from google.cloud.gke_backup_v1.types import restore_plan as gcg_restore_plan
 from google.cloud.gke_backup_v1.types import volume
-from google.protobuf import empty_pb2  # type: ignore
-from google.protobuf import field_mask_pb2  # type: ignore
-from google.protobuf import timestamp_pb2  # type: ignore
-from .transports.base import BackupForGKETransport, DEFAULT_CLIENT_INFO
+
+from .transports.base import DEFAULT_CLIENT_INFO, BackupForGKETransport
 from .transports.grpc import BackupForGKEGrpcTransport
 from .transports.grpc_asyncio import BackupForGKEGrpcAsyncIOTransport
 from .transports.rest import BackupForGKERestTransport
