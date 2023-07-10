@@ -703,12 +703,13 @@ class BackupForGKEClient(metaclass=BackupForGKEClientMeta):
                 name for the BackupPlan resource. This
                 name must:
                 - be between 1 and 63 characters long
-                (inclusive) - consist of only lower-case
-                ASCII letters, numbers, and dashes -
-                start with a lower-case letter
+                  (inclusive)
+                - consist of only lower-case ASCII
+                  letters, numbers, and dashes
+                - start with a lower-case letter
                 - end with a lower-case letter or number
                 - be unique within the set of
-                BackupPlans in this location
+                  BackupPlans in this location
 
                 This corresponds to the ``backup_plan_id`` field
                 on the ``request`` instance; if ``request`` is provided, this
@@ -1324,11 +1325,15 @@ class BackupForGKEClient(metaclass=BackupForGKEClientMeta):
                 The client-provided short name for
                 the Backup resource. This name must:
 
-                 - be between 1 and 63 characters long (inclusive)
-                 - consist of only lower-case ASCII letters, numbers, and dashes
+                 - be between 1 and 63 characters long
+                  (inclusive)
+                 - consist of only lower-case ASCII
+                  letters, numbers, and dashes
                  - start with a lower-case letter
-                 - end with a lower-case letter or number
-                 - be unique within the set of Backups in this BackupPlan
+                 - end with a lower-case letter or
+                  number
+                 - be unique within the set of Backups
+                  in this BackupPlan
 
                 This corresponds to the ``backup_id`` field
                 on the ``request`` instance; if ``request`` is provided, this
@@ -2182,12 +2187,15 @@ class BackupForGKEClient(metaclass=BackupForGKEClientMeta):
                 Required. The client-provided short
                 name for the RestorePlan resource. This
                 name must:
-
-                 - be between 1 and 63 characters long (inclusive)
-                 - consist of only lower-case ASCII letters, numbers, and dashes
+                 - be between 1 and 63 characters long
+                  (inclusive)
+                 - consist of only lower-case ASCII
+                  letters, numbers, and dashes
                  - start with a lower-case letter
-                 - end with a lower-case letter or number
-                 - be unique within the set of RestorePlans in this location
+                 - end with a lower-case letter or
+                  number
+                 - be unique within the set of
+                  RestorePlans in this location
 
                 This corresponds to the ``restore_plan_id`` field
                 on the ``request`` instance; if ``request`` is provided, this
@@ -2815,12 +2823,15 @@ class BackupForGKEClient(metaclass=BackupForGKEClientMeta):
                 Required. The client-provided short
                 name for the Restore resource. This name
                 must:
-
-                 - be between 1 and 63 characters long (inclusive)
-                 - consist of only lower-case ASCII letters, numbers, and dashes
+                 - be between 1 and 63 characters long
+                  (inclusive)
+                 - consist of only lower-case ASCII
+                  letters, numbers, and dashes
                  - start with a lower-case letter
-                 - end with a lower-case letter or number
-                 - be unique within the set of Restores in this RestorePlan.
+                 - end with a lower-case letter or
+                  number
+                 - be unique within the set of Restores
+                  in this RestorePlan.
 
                 This corresponds to the ``restore_id`` field
                 on the ``request`` instance; if ``request`` is provided, this

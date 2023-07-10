@@ -415,7 +415,8 @@ class RestoreConfig(proto.Message):
         Some group kinds are not reasonable choices for a restore, and
         will cause an error if selected here. Any scope selection that
         would restore "all valid" resources automatically excludes these
-        group kinds. - gkebackup.gke.io/BackupJob
+        group kinds.
+        - gkebackup.gke.io/BackupJob
         - gkebackup.gke.io/RestoreJob
         - metrics.k8s.io/NodeMetrics
         - migration.k8s.io/StorageState
