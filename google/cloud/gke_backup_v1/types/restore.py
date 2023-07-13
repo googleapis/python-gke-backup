@@ -597,14 +597,16 @@ class RestoreConfig(proto.Message):
                 ADD (4):
                     The "add" operation performs one of the
                     following functions, depending upon what the
-                    target location references: 1. If the target
-                    location specifies an array index, a new value
-                    is inserted into the array at the specified
-                    index. 2. If the target location specifies an
-                    object member that does not already exist, a new
-                    member is added to the object. 3. If the target
-                    location specifies an object member that does
-                    exist, that member's value is replaced.
+                    target location references:
+
+                    1. If the target location specifies an array
+                    index, a new value is inserted into the array at
+                    the specified index. 2. If the target location
+                    specifies an object member that does not already
+                    exist, a new member is added to the object. 3.
+                    If the target location specifies an object
+                    member that does exist, that member's value is
+                    replaced.
                 TEST (5):
                     The "test" operation tests that a value at
                     the target location is equal to a specified

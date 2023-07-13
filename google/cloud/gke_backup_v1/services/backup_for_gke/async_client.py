@@ -317,6 +317,7 @@ class BackupForGKEAsyncClient:
                 Required. The client-provided short
                 name for the BackupPlan resource. This
                 name must:
+
                 - be between 1 and 63 characters long
                   (inclusive)
                 - consist of only lower-case ASCII
@@ -1856,6 +1857,7 @@ class BackupForGKEAsyncClient:
                 Required. The client-provided short
                 name for the RestorePlan resource. This
                 name must:
+
                  - be between 1 and 63 characters long
                   (inclusive)
                  - consist of only lower-case ASCII
@@ -2510,6 +2512,7 @@ class BackupForGKEAsyncClient:
                 Required. The client-provided short
                 name for the Restore resource. This name
                 must:
+
                  - be between 1 and 63 characters long
                   (inclusive)
                  - consist of only lower-case ASCII
